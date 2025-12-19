@@ -1,0 +1,175 @@
+2025-12-19 15:25:23 INFO  [main] c.o.w.w.Websockets201ApplicationTests - Starting Websockets201ApplicationTests using Java 19.0.1 with PID 17556 (started by lenovo in E:\websockets201\websockets201)
+2025-12-19 15:25:23 INFO  [main] c.o.w.w.Websockets201ApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-12-19 15:25:23 DEBUG [main] o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3ee69ad8
+2025-12-19 15:25:26 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-19 15:25:26 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 160 ms. Found 6 JPA repository interfaces.
+2025-12-19 15:25:29 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-19 15:25:30 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-19 15:25:31 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2699b656
+2025-12-19 15:25:31 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-19 15:25:37 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 15:25:38 INFO  [main] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-19 15:25:39 INFO  [main] c.o.w.w.config.WebSocketConfig - WebSocketConfig: Registered OCPP WebSocket handler ws://localhost:8081/ocpp2/v201/{stationId}
+2025-12-19 15:25:39 DEBUG [main] o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/ocpp/v201/{cpId}] in 'webSocketHandlerMapping'
+2025-12-19 15:25:39 WARN  [main] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-19 15:25:39 INFO  [main] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-12-19 15:25:40 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 16 mappings in 'requestMappingHandlerMapping'
+2025-12-19 15:25:40 DEBUG [main] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-12-19 15:25:40 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-19 15:25:40 DEBUG [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-19 15:25:41 INFO  [main] c.o.w.w.Websockets201ApplicationTests - Started Websockets201ApplicationTests in 18.721 seconds (process running for 22.493)
+2025-12-19 15:25:41 INFO  [main] c.o.w.w.config.OpenLogOnStart - Log file opened in Notepad at startup.
+2025-12-19 15:25:42 DEBUG [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@3ee69ad8, started on Fri Dec 19 15:25:23 IST 2025
+2025-12-19 15:25:42 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 15:25:42 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-19 15:25:42 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-19 15:46:41 INFO  [main] c.o.w.w.Websockets201ApplicationTests - Starting Websockets201ApplicationTests using Java 19.0.1 with PID 14400 (started by lenovo in E:\websockets201\websockets201)
+2025-12-19 15:46:41 INFO  [main] c.o.w.w.Websockets201ApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-12-19 15:46:41 DEBUG [main] o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3ee69ad8
+2025-12-19 15:46:44 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-19 15:46:44 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 140 ms. Found 6 JPA repository interfaces.
+2025-12-19 15:46:47 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-19 15:46:47 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-19 15:46:48 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@691eb389
+2025-12-19 15:46:48 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-19 15:46:51 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 15:46:52 INFO  [main] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-19 15:46:52 INFO  [main] c.o.w.w.config.WebSocketConfig - WebSocketConfig: Registered OCPP WebSocket handler ws://localhost:8081/ocpp2/v201/{stationId}
+2025-12-19 15:46:52 DEBUG [main] o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/ocpp/v201/{cpId}] in 'webSocketHandlerMapping'
+2025-12-19 15:46:53 WARN  [main] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-19 15:46:53 INFO  [main] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-12-19 15:46:53 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 16 mappings in 'requestMappingHandlerMapping'
+2025-12-19 15:46:53 DEBUG [main] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-12-19 15:46:53 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-19 15:46:53 DEBUG [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-19 15:46:54 INFO  [main] c.o.w.w.Websockets201ApplicationTests - Started Websockets201ApplicationTests in 14.165 seconds (process running for 18.147)
+2025-12-19 15:46:54 INFO  [main] c.o.w.w.config.OpenLogOnStart - Log file opened in Notepad at startup.
+2025-12-19 15:46:55 DEBUG [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@3ee69ad8, started on Fri Dec 19 15:46:41 IST 2025
+2025-12-19 15:46:55 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 15:46:55 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-19 15:46:55 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-19 16:01:36 INFO  [main] c.o.w.w.Websockets201ApplicationTests - Starting Websockets201ApplicationTests using Java 19.0.1 with PID 20432 (started by lenovo in E:\websockets201\websockets201)
+2025-12-19 16:01:36 INFO  [main] c.o.w.w.Websockets201ApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-12-19 16:01:36 DEBUG [main] o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3ee69ad8
+2025-12-19 16:01:39 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-19 16:01:39 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 188 ms. Found 6 JPA repository interfaces.
+2025-12-19 16:01:43 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-19 16:01:44 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-19 16:01:44 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@691eb389
+2025-12-19 16:01:44 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-19 16:01:48 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 16:01:48 INFO  [main] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-19 16:01:49 INFO  [main] c.o.w.w.config.WebSocketConfig - WebSocketConfig: Registered OCPP WebSocket handler ws://localhost:8081/ocpp2/v201/{stationId}
+2025-12-19 16:01:49 DEBUG [main] o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/ocpp/v201/{cpId}] in 'webSocketHandlerMapping'
+2025-12-19 16:01:50 WARN  [main] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-19 16:01:50 INFO  [main] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-12-19 16:01:50 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 16 mappings in 'requestMappingHandlerMapping'
+2025-12-19 16:01:50 DEBUG [main] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-12-19 16:01:50 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-19 16:01:51 DEBUG [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-19 16:01:51 INFO  [main] c.o.w.w.Websockets201ApplicationTests - Started Websockets201ApplicationTests in 16.642 seconds (process running for 19.595)
+2025-12-19 16:01:52 INFO  [main] c.o.w.w.config.OpenLogOnStart - Log file opened in Notepad at startup.
+2025-12-19 16:01:54 DEBUG [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@3ee69ad8, started on Fri Dec 19 16:01:36 IST 2025
+2025-12-19 16:01:54 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 16:01:54 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-19 16:01:54 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-19 16:45:21 INFO  [main] c.o.w.w.Websockets201ApplicationTests - Starting Websockets201ApplicationTests using Java 19.0.1 with PID 9360 (started by lenovo in E:\websockets201\websockets201)
+2025-12-19 16:45:21 INFO  [main] c.o.w.w.Websockets201ApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-12-19 16:45:21 DEBUG [main] o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3ee69ad8
+2025-12-19 16:45:24 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-19 16:45:24 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 159 ms. Found 6 JPA repository interfaces.
+2025-12-19 16:45:27 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-19 16:45:27 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-19 16:45:28 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@691eb389
+2025-12-19 16:45:28 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-19 16:45:30 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 16:45:30 INFO  [main] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-19 16:45:31 INFO  [main] c.o.w.w.config.WebSocketConfig - WebSocketConfig: Registered OCPP WebSocket handler ws://localhost:8081/ocpp2/v201/{stationId}
+2025-12-19 16:45:31 DEBUG [main] o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/ocpp/v201/{cpId}] in 'webSocketHandlerMapping'
+2025-12-19 16:45:32 WARN  [main] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-19 16:45:32 INFO  [main] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-12-19 16:45:32 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 16 mappings in 'requestMappingHandlerMapping'
+2025-12-19 16:45:32 DEBUG [main] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-12-19 16:45:32 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-19 16:45:32 DEBUG [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-19 16:45:33 INFO  [main] c.o.w.w.Websockets201ApplicationTests - Started Websockets201ApplicationTests in 12.993 seconds (process running for 16.29)
+2025-12-19 16:45:33 INFO  [main] c.o.w.w.config.OpenLogOnStart - Log file opened in Notepad at startup.
+2025-12-19 16:45:34 DEBUG [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@3ee69ad8, started on Fri Dec 19 16:45:21 IST 2025
+2025-12-19 16:45:34 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 16:45:34 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-19 16:45:34 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-19 16:59:12 INFO  [main] c.o.w.w.Websockets201ApplicationTests - Starting Websockets201ApplicationTests using Java 19.0.1 with PID 16824 (started by lenovo in E:\websockets201\websockets201)
+2025-12-19 16:59:12 INFO  [main] c.o.w.w.Websockets201ApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-12-19 16:59:12 DEBUG [main] o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3ee69ad8
+2025-12-19 16:59:15 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-19 16:59:15 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 166 ms. Found 6 JPA repository interfaces.
+2025-12-19 16:59:20 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-19 16:59:20 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-19 16:59:20 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1dce481b
+2025-12-19 16:59:20 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-19 16:59:24 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 16:59:24 INFO  [main] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-19 16:59:25 INFO  [main] c.o.w.w.config.WebSocketConfig - WebSocketConfig: Registered OCPP WebSocket handler ws://localhost:8081/ocpp2/v201/{stationId}
+2025-12-19 16:59:26 DEBUG [main] o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/ocpp/v201/{cpId}] in 'webSocketHandlerMapping'
+2025-12-19 16:59:26 WARN  [main] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-19 16:59:26 INFO  [main] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-12-19 16:59:27 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 16 mappings in 'requestMappingHandlerMapping'
+2025-12-19 16:59:27 DEBUG [main] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-12-19 16:59:27 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-19 16:59:27 DEBUG [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-19 16:59:28 INFO  [main] c.o.w.w.Websockets201ApplicationTests - Started Websockets201ApplicationTests in 17.206 seconds (process running for 20.122)
+2025-12-19 16:59:28 INFO  [main] c.o.w.w.config.OpenLogOnStart - Log file opened in Notepad at startup.
+2025-12-19 16:59:30 DEBUG [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@3ee69ad8, started on Fri Dec 19 16:59:12 IST 2025
+2025-12-19 16:59:30 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 16:59:30 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-19 16:59:30 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-19 18:04:02 INFO  [main] c.o.w.w.Websockets201ApplicationTests - Starting Websockets201ApplicationTests using Java 19.0.1 with PID 15864 (started by lenovo in E:\websockets201\websockets201)
+2025-12-19 18:04:02 INFO  [main] c.o.w.w.Websockets201ApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-12-19 18:04:02 DEBUG [main] o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3ee69ad8
+2025-12-19 18:04:05 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-19 18:04:05 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 147 ms. Found 6 JPA repository interfaces.
+2025-12-19 18:04:08 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-19 18:04:08 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-19 18:04:10 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1dce481b
+2025-12-19 18:04:10 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-19 18:04:14 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 18:04:14 INFO  [main] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-19 18:04:15 INFO  [main] c.o.w.w.config.WebSocketConfig - WebSocketConfig: Registered OCPP WebSocket handler ws://localhost:8081/ocpp2/v201/{chargeboxId}
+2025-12-19 18:04:15 DEBUG [main] o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/ocpp/v201/{cpId}] in 'webSocketHandlerMapping'
+2025-12-19 18:04:16 WARN  [main] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-19 18:04:16 INFO  [main] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-12-19 18:04:16 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 16 mappings in 'requestMappingHandlerMapping'
+2025-12-19 18:04:16 DEBUG [main] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-12-19 18:04:17 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-19 18:04:17 DEBUG [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-19 18:04:18 INFO  [main] c.o.w.w.Websockets201ApplicationTests - Started Websockets201ApplicationTests in 16.824 seconds (process running for 20.188)
+2025-12-19 18:04:18 INFO  [main] c.o.w.w.config.OpenLogOnStart - Log file opened in Notepad at startup.
+2025-12-19 18:04:20 DEBUG [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@3ee69ad8, started on Fri Dec 19 18:04:02 IST 2025
+2025-12-19 18:04:21 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 18:04:21 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-19 18:04:21 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-19 19:15:09 INFO  [main] c.o.w.w.Websockets201ApplicationTests - Starting Websockets201ApplicationTests using Java 19.0.1 with PID 20360 (started by lenovo in E:\websockets201\websockets201)
+2025-12-19 19:15:09 INFO  [main] c.o.w.w.Websockets201ApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-12-19 19:15:09 DEBUG [main] o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3ee69ad8
+2025-12-19 19:15:12 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-19 19:15:12 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 149 ms. Found 6 JPA repository interfaces.
+2025-12-19 19:15:16 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-19 19:15:16 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-19 19:15:17 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@691eb389
+2025-12-19 19:15:17 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-19 19:15:21 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 19:15:21 INFO  [main] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-19 19:15:22 INFO  [main] c.o.w.w.config.WebSocketConfig - WebSocketConfig: Registered OCPP WebSocket handler ws://localhost:8081/ocpp2/v201/{chargeboxId}
+2025-12-19 19:15:22 DEBUG [main] o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/ocpp/v201/{cpId}] in 'webSocketHandlerMapping'
+2025-12-19 19:15:22 WARN  [main] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-19 19:15:22 INFO  [main] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-12-19 19:15:23 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 16 mappings in 'requestMappingHandlerMapping'
+2025-12-19 19:15:23 DEBUG [main] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-12-19 19:15:23 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-19 19:15:23 DEBUG [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-19 19:15:24 INFO  [main] c.o.w.w.Websockets201ApplicationTests - Started Websockets201ApplicationTests in 15.941 seconds (process running for 19.006)
+2025-12-19 19:15:24 INFO  [main] c.o.w.w.config.OpenLogOnStart - Log file opened in Notepad at startup.
+2025-12-19 19:15:25 DEBUG [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@3ee69ad8, started on Fri Dec 19 19:15:09 IST 2025
+2025-12-19 19:15:25 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19 19:15:25 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-19 19:15:25 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

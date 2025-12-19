@@ -1,0 +1,293 @@
+2025-12-16 22:32:36 INFO  [main] c.o.w.w.Websockets201Application - Starting Websockets201Application v0.0.1-SNAPSHOT using Java 17.0.12 with PID 20696 (E:\websockets201\websockets201\target\websockets201-0.0.1-SNAPSHOT.jar started by lenovo in E:\websockets201)
+2025-12-16 22:32:36 INFO  [main] c.o.w.w.Websockets201Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-16 22:32:43 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-16 22:32:44 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 481 ms. Found 5 JPA repository interfaces.
+2025-12-16 22:32:49 INFO  [main] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-12-16 22:32:49 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-12-16 22:32:49 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-16 22:32:49 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-16 22:32:49 INFO  [main] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 13166 ms
+2025-12-16 22:32:57 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-16 22:32:57 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-16 22:32:59 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@24258b54
+2025-12-16 22:32:59 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-16 22:33:08 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-16 22:33:09 INFO  [main] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-16 22:33:39 INFO  [main] c.o.w.w.config.WebSocketConfig - WebSocketConfig: Registered OCPP WebSocket handler ws://localhost:8081/ocpp2/v201/{stationId}
+2025-12-16 22:33:39 DEBUG [main] o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/ocpp/v201/{cpId}] in 'webSocketHandlerMapping'
+2025-12-16 22:33:40 WARN  [main] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-16 22:33:41 INFO  [main] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-12-16 22:33:42 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 11 mappings in 'requestMappingHandlerMapping'
+2025-12-16 22:33:42 DEBUG [main] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-12-16 22:33:42 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-16 22:33:42 DEBUG [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-16 22:33:43 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-12-16 22:33:43 INFO  [main] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-12-16 22:33:43 INFO  [main] c.o.w.w.Websockets201Application - Started Websockets201Application in 70.881 seconds (process running for 76.469)
+2025-12-16 22:33:43 INFO  [main] c.o.w.w.config.OpenLogOnStart - Log file opened in Notepad at startup.
+2025-12-16 22:33:48 INFO  [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-16 22:33:48 INFO  [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-16 22:33:48 DEBUG [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-12-16 22:33:48 DEBUG [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-12-16 22:33:48 DEBUG [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4bc75792
+2025-12-16 22:33:48 DEBUG [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@2d4aadc
+2025-12-16 22:33:48 DEBUG [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-12-16 22:33:48 INFO  [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2025-12-16 22:33:48 DEBUG [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/ocpp/v201/ch014", parameters={}
+2025-12-16 22:33:48 DEBUG [http-nio-8081-exec-2] o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@25291901
+2025-12-16 22:33:48 DEBUG [http-nio-8081-exec-2] o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ocpp/v201/ch014
+2025-12-16 22:33:48 DEBUG [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+2025-12-16 22:33:48 DEBUG [http-nio-8081-exec-2] o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=f9f260a5-d5a2-91bb-60c0-6248dec75878, uri=ws://localhost:8081/ocpp/v201/ch014]
+2025-12-16 22:33:48 INFO  [http-nio-8081-exec-2] c.o.w.w.handler.OcppWebSocketHandler - WS: Connection established from CP id=ch014
+2025-12-16 22:33:48 INFO  [http-nio-8081-exec-2] c.o.w.w.h.BootNotificationHandler - BootNotification from ch014 vendor=OCPP Simulator model=Virtual-CP-2.0.1
+2025-12-16 22:34:01 INFO  [http-nio-8081-exec-1] c.o.w.w.handler.AuthorizeHandler -  Authorize Request received → idToken=tagg123
+2025-12-16 22:34:03 INFO  [http-nio-8081-exec-1] c.o.w.w.handler.AuthorizeHandler -  Authorize Response → {"messageId":"b2f0adeb-147a-4576-b0c4-8dbf8e59451b","action":"Authorize","payload":{"idTokenInfo":{"status":"Accepted"}}}
+2025-12-16 22:35:22 INFO  [http-nio-8081-exec-5] c.o.w.w.h.TransactionEventHandler - TransactionEvent → type=Started txId=null cpId=1 meterValue=0.0
+2025-12-16 22:36:23 INFO  [http-nio-8081-exec-5] c.o.w.w.h.TransactionEventHandler - STARTED → assigned txId=5
+2025-12-16 23:01:53 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=25m19s17ms100µs).
+2025-12-16 23:01:53 INFO  [http-nio-8081-exec-5] c.o.w.w.h.StatusNotificationHandler - StatusNotification from ch014 status=Charging
+2025-12-16 23:01:54 WARN  [http-nio-8081-exec-5] c.o.w.w.handler.MeterValuesHandler - Received MeterValues (OCPP 1.6) — ignoring because backend is OCPP 2.0.1
+2025-12-16 23:01:54 WARN  [http-nio-8081-exec-5] c.o.w.w.handler.MeterValuesHandler - Received MeterValues (OCPP 1.6) — ignoring because backend is OCPP 2.0.1
+2025-12-16 23:01:54 WARN  [http-nio-8081-exec-5] c.o.w.w.handler.MeterValuesHandler - Received MeterValues (OCPP 1.6) — ignoring because backend is OCPP 2.0.1
+2025-12-16 23:01:54 WARN  [http-nio-8081-exec-5] c.o.w.w.handler.MeterValuesHandler - Received MeterValues (OCPP 1.6) — ignoring because backend is OCPP 2.0.1
+2025-12-16 23:01:54 INFO  [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-16 23:01:54 INFO  [http-nio-8081-exec-5] c.o.w.w.h.StatusNotificationHandler - StatusNotification from ch014 status=Finishing
+2025-12-16 23:01:54 INFO  [http-nio-8081-exec-5] c.o.w.w.h.TransactionEventHandler - TransactionEvent → type=Ended txId=null cpId=1 meterValue=458.0
+2025-12-16 23:01:54 WARN  [http-nio-8081-exec-5] c.o.w.w.h.TransactionEventHandler - TransactionEvent Ended received without transactionId – ignored
+2025-12-16 23:01:54 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-16 23:01:54 INFO  [http-nio-8081-exec-5] c.o.w.w.h.StatusNotificationHandler - StatusNotification from ch014 status=Available
+2025-12-16 23:01:54 DEBUG [http-nio-8081-exec-5] o.s.w.s.h.LoggingWebSocketHandlerDecorator - Transport error in StandardWebSocketSession[id=f9f260a5-d5a2-91bb-60c0-6248dec75878, uri=ws://localhost:8081/ocpp/v201/ch014]
+java.io.IOException: java.nio.channels.ClosedChannelException
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlockInternal(WsRemoteEndpointImplBase.java:329)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:269)
+	at org.apache.tomcat.websocket.WsSession.sendCloseMessage(WsSession.java:777)
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:574)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlockInternal(WsRemoteEndpointImplBase.java:309)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:269)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:253)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:48)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:206)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ocpp201.websocket.websockets201.handler.StatusNotificationHandler.handle(StatusNotificationHandler.java:39)
+	at com.ocpp201.websocket.websockets201.routing.MessageRouter.route(MessageRouter.java:56)
+	at com.ocpp201.websocket.websockets201.handler.OcppWebSocketHandler.handleTextMessage(OcppWebSocketHandler.java:56)
+	at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43)
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75)
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56)
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:113)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:84)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:81)
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:392)
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:130)
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:486)
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:286)
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:129)
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:184)
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:164)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:152)
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.nio.channels.ClosedChannelException: null
+	at org.apache.tomcat.util.net.NioChannel$1.write(NioChannel.java:282)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1674)
+	at org.apache.tomcat.util.net.SocketWrapperBase$OperationState.start(SocketWrapperBase.java:986)
+	at org.apache.tomcat.util.net.SocketWrapperBase.vectoredOperation(SocketWrapperBase.java:1357)
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1286)
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1261)
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:167)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:524)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlockInternal(WsRemoteEndpointImplBase.java:316)
+	... 38 common frames omitted
+2025-12-16 23:01:54 WARN  [http-nio-8081-exec-5] c.o.w.w.handler.OcppWebSocketHandler - WS: Transport warning CP=ch014 reason=java.nio.channels.ClosedChannelException
+2025-12-16 23:01:54 DEBUG [http-nio-8081-exec-5] o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=f9f260a5-d5a2-91bb-60c0-6248dec75878, uri=ws://localhost:8081/ocpp/v201/ch014] closed with CloseStatus[code=1006, reason=The current thread was interrupted while waiting for a blocking send to complete]
+2025-12-16 23:01:54 INFO  [http-nio-8081-exec-5] c.o.w.w.handler.OcppWebSocketHandler - WS: Connection closed from CP id=ch014 status=CloseStatus[code=1006, reason=The current thread was interrupted while waiting for a blocking send to complete]
+2025-12-16 23:01:54 ERROR [http-nio-8081-exec-5] c.o.w.w.routing.MessageRouter - Error routing message: [2,"87b645b7-0622-496c-9a90-ec783b030ff9","StatusNotification",{"timestamp":"2025-12-16T17:08:13.420Z","evseId":1,"connectorId":1,"connectorStatus":"Available","errorCode":"NoError"}]
+java.io.IOException: The current thread was interrupted while waiting for a blocking send to complete
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlockInternal(WsRemoteEndpointImplBase.java:311)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:269)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:253)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendPartialString(WsRemoteEndpointImplBase.java:226)
+	at org.apache.tomcat.websocket.WsRemoteEndpointBasic.sendText(WsRemoteEndpointBasic.java:48)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:206)
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:106)
+	at com.ocpp201.websocket.websockets201.handler.StatusNotificationHandler.handle(StatusNotificationHandler.java:39)
+	at com.ocpp201.websocket.websockets201.routing.MessageRouter.route(MessageRouter.java:56)
+	at com.ocpp201.websocket.websockets201.handler.OcppWebSocketHandler.handleTextMessage(OcppWebSocketHandler.java:56)
+	at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43)
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75)
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56)
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:113)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:84)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:81)
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:392)
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:130)
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:486)
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:286)
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:129)
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:184)
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:164)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:152)
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1081)
+	at java.base/java.util.concurrent.Semaphore.tryAcquire(Semaphore.java:415)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.acquireMessagePartInProgressSemaphore(WsRemoteEndpointImplBase.java:358)
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.acquireMessagePartInProgressSemaphore(WsRemoteEndpointImplServer.java:115)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlockInternal(WsRemoteEndpointImplBase.java:301)
+	... 34 common frames omitted
+2025-12-16 23:01:54 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-16 23:01:54 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-16 23:01:54 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-16 23:32:52 INFO  [main] c.o.w.w.Websockets201Application - Starting Websockets201Application v0.0.1-SNAPSHOT using Java 17.0.12 with PID 24340 (E:\websockets201\websockets201\target\websockets201-0.0.1-SNAPSHOT.jar started by lenovo in E:\websockets201)
+2025-12-16 23:32:52 INFO  [main] c.o.w.w.Websockets201Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-16 23:32:56 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-16 23:32:56 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 232 ms. Found 5 JPA repository interfaces.
+2025-12-16 23:32:59 INFO  [main] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-12-16 23:32:59 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-12-16 23:32:59 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-16 23:32:59 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-16 23:32:59 INFO  [main] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 6234 ms
+2025-12-16 23:33:06 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-16 23:33:07 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-16 23:33:07 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@776e7dfb
+2025-12-16 23:33:07 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-16 23:33:16 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-16 23:33:17 INFO  [main] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-16 23:33:18 INFO  [main] c.o.w.w.config.WebSocketConfig - WebSocketConfig: Registered OCPP WebSocket handler ws://localhost:8081/ocpp2/v201/{stationId}
+2025-12-16 23:33:18 DEBUG [main] o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/ocpp/v201/{cpId}] in 'webSocketHandlerMapping'
+2025-12-16 23:33:18 WARN  [main] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-16 23:33:18 INFO  [main] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-12-16 23:33:19 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 11 mappings in 'requestMappingHandlerMapping'
+2025-12-16 23:33:19 DEBUG [main] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-12-16 23:33:19 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-16 23:33:19 DEBUG [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-16 23:33:20 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-12-16 23:33:20 INFO  [main] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-12-16 23:33:20 INFO  [main] c.o.w.w.Websockets201Application - Started Websockets201Application in 30.623 seconds (process running for 34.065)
+2025-12-16 23:33:20 INFO  [main] c.o.w.w.config.OpenLogOnStart - Log file opened in Notepad at startup.
+2025-12-16 23:33:52 INFO  [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-16 23:33:52 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-16 23:33:52 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-12-16 23:33:52 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-12-16 23:33:52 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@304933cb
+2025-12-16 23:33:52 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@309b6768
+2025-12-16 23:33:52 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-12-16 23:33:52 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-12-16 23:33:52 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/ocpp/v201/ch014", parameters={}
+2025-12-16 23:33:52 DEBUG [http-nio-8081-exec-1] o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@14a5d7ee
+2025-12-16 23:33:52 DEBUG [http-nio-8081-exec-1] o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ocpp/v201/ch014
+2025-12-16 23:33:52 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+2025-12-16 23:33:52 DEBUG [http-nio-8081-exec-1] o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=fa8c8400-bdf2-7622-0123-3a592f2e42c4, uri=ws://localhost:8081/ocpp/v201/ch014]
+2025-12-16 23:33:52 INFO  [http-nio-8081-exec-1] c.o.w.w.handler.OcppWebSocketHandler - WS: Connection established from CP id=ch014
+2025-12-16 23:33:52 INFO  [http-nio-8081-exec-1] c.o.w.w.h.BootNotificationHandler - BootNotification from ch014 vendor=OCPP Simulator model=Virtual-CP-2.0.1
+2025-12-16 23:34:02 INFO  [http-nio-8081-exec-2] c.o.w.w.handler.AuthorizeHandler -  Authorize Request received → idToken=tagg123
+2025-12-16 23:34:06 INFO  [http-nio-8081-exec-2] c.o.w.w.handler.AuthorizeHandler -  Authorize Response → {"messageId":"5bf67624-0de4-4983-a8b3-9bdd0b7d9fe8","action":"Authorize","payload":{"idTokenInfo":{"status":"Accepted"}}}
+2025-12-16 23:34:06 INFO  [http-nio-8081-exec-2] c.o.w.w.h.TransactionEventHandler - TransactionEvent → type=Started txId=null cpId=1 meterValue=0.0
+2025-12-16 23:34:06 INFO  [http-nio-8081-exec-2] c.o.w.w.h.TransactionEventHandler - STARTED → assigned txId=6
+2025-12-16 23:34:06 INFO  [http-nio-8081-exec-2] c.o.w.w.h.StatusNotificationHandler - StatusNotification from ch014 status=Charging
+2025-12-16 23:35:04 WARN  [http-nio-8081-exec-3] c.o.w.w.handler.MeterValuesHandler - Received MeterValues (OCPP 1.6) — ignoring because backend is OCPP 2.0.1
+2025-12-16 23:35:12 INFO  [http-nio-8081-exec-4] c.o.w.w.h.StatusNotificationHandler - StatusNotification from ch014 status=Finishing
+2025-12-16 23:35:12 INFO  [http-nio-8081-exec-4] c.o.w.w.h.TransactionEventHandler - TransactionEvent → type=Ended txId=null cpId=1 meterValue=112.0
+2025-12-16 23:35:12 WARN  [http-nio-8081-exec-4] c.o.w.w.h.TransactionEventHandler - TransactionEvent Ended received without transactionId – ignored
+2025-12-16 23:35:12 INFO  [http-nio-8081-exec-4] c.o.w.w.h.StatusNotificationHandler - StatusNotification from ch014 status=Available
+2025-12-16 23:35:15 DEBUG [http-nio-8081-exec-5] o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=fa8c8400-bdf2-7622-0123-3a592f2e42c4, uri=ws://localhost:8081/ocpp/v201/ch014] closed with CloseStatus[code=1001, reason=null]
+2025-12-16 23:35:15 INFO  [http-nio-8081-exec-5] c.o.w.w.handler.OcppWebSocketHandler - WS: Connection closed from CP id=ch014 status=CloseStatus[code=1001, reason=null]
+2025-12-16 23:35:18 DEBUG [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/ocpp/v201/ch014", parameters={}
+2025-12-16 23:35:18 DEBUG [http-nio-8081-exec-6] o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@14a5d7ee
+2025-12-16 23:35:18 DEBUG [http-nio-8081-exec-6] o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ocpp/v201/ch014
+2025-12-16 23:35:18 DEBUG [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+2025-12-16 23:35:18 DEBUG [http-nio-8081-exec-6] o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=c7e45b32-4432-d858-3d83-55e9177e4e9e, uri=ws://localhost:8081/ocpp/v201/ch014]
+2025-12-16 23:35:18 INFO  [http-nio-8081-exec-6] c.o.w.w.handler.OcppWebSocketHandler - WS: Connection established from CP id=ch014
+2025-12-16 23:35:18 INFO  [http-nio-8081-exec-7] c.o.w.w.h.BootNotificationHandler - BootNotification from ch014 vendor=OCPP Simulator model=Virtual-CP-2.0.1
+2025-12-16 23:35:28 INFO  [http-nio-8081-exec-8] c.o.w.w.handler.AuthorizeHandler -  Authorize Request received → idToken=tagg123
+2025-12-16 23:35:28 INFO  [http-nio-8081-exec-8] c.o.w.w.handler.AuthorizeHandler -  Authorize Response → {"messageId":"e5e81534-dd0c-4b4c-95a9-87150ecaadb9","action":"Authorize","payload":{"idTokenInfo":{"status":"Accepted"}}}
+2025-12-16 23:35:36 INFO  [http-nio-8081-exec-9] c.o.w.w.h.TransactionEventHandler - TransactionEvent → type=Started txId=null cpId=1 meterValue=0.0
+2025-12-16 23:35:36 INFO  [http-nio-8081-exec-9] c.o.w.w.h.TransactionEventHandler - STARTED → assigned txId=7
+2025-12-16 23:35:36 INFO  [http-nio-8081-exec-9] c.o.w.w.h.StatusNotificationHandler - StatusNotification from ch014 status=Charging
+2025-12-16 23:36:17 INFO  [http-nio-8081-exec-10] c.o.w.w.h.StatusNotificationHandler - StatusNotification from ch014 status=Finishing
+2025-12-16 23:36:17 INFO  [http-nio-8081-exec-10] c.o.w.w.h.TransactionEventHandler - TransactionEvent → type=Ended txId=null cpId=1 meterValue=0.0
+2025-12-16 23:36:17 WARN  [http-nio-8081-exec-10] c.o.w.w.h.TransactionEventHandler - TransactionEvent Ended received without transactionId – ignored
+2025-12-16 23:36:17 INFO  [http-nio-8081-exec-10] c.o.w.w.h.StatusNotificationHandler - StatusNotification from ch014 status=Available
+2025-12-16 23:36:50 INFO  [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-16 23:36:50 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-16 23:36:50 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-16 23:36:50 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-16 23:36:50 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-16 23:36:50 DEBUG [SpringApplicationShutdownHook] o.s.w.s.h.LoggingWebSocketHandlerDecorator - Transport error in StandardWebSocketSession[id=c7e45b32-4432-d858-3d83-55e9177e4e9e, uri=ws://localhost:8081/ocpp/v201/ch014]
+java.io.IOException: java.nio.channels.ClosedChannelException
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlockInternal(WsRemoteEndpointImplBase.java:329)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:269)
+	at org.apache.tomcat.websocket.WsSession.sendCloseMessage(WsSession.java:777)
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:574)
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:541)
+	at org.apache.tomcat.websocket.WsSession.close(WsSession.java:529)
+	at org.apache.tomcat.websocket.WsWebSocketContainer.destroy(WsWebSocketContainer.java:992)
+	at org.apache.tomcat.websocket.server.WsContextListener.contextDestroyed(WsContextListener.java:46)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4046)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:4652)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1172)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1167)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:779)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1172)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1167)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:779)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:466)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:909)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+	at org.apache.catalina.startup.Tomcat.stop(Tomcat.java:445)
+	at org.springframework.boot.tomcat.TomcatWebServer.stopTomcat(TomcatWebServer.java:298)
+	at org.springframework.boot.tomcat.TomcatWebServer.destroy(TomcatWebServer.java:371)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1122)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.nio.channels.ClosedChannelException: null
+	at org.apache.tomcat.util.net.NioChannel$1.write(NioChannel.java:282)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1674)
+	at org.apache.tomcat.util.net.SocketWrapperBase$OperationState.start(SocketWrapperBase.java:986)
+	at org.apache.tomcat.util.net.SocketWrapperBase.vectoredOperation(SocketWrapperBase.java:1357)
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1286)
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1261)
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:167)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:524)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlockInternal(WsRemoteEndpointImplBase.java:316)
+	... 37 common frames omitted
+2025-12-16 23:36:50 WARN  [SpringApplicationShutdownHook] c.o.w.w.handler.OcppWebSocketHandler - WS: Transport warning CP=ch014 reason=java.nio.channels.ClosedChannelException
+2025-12-16 23:36:50 DEBUG [SpringApplicationShutdownHook] o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=c7e45b32-4432-d858-3d83-55e9177e4e9e, uri=ws://localhost:8081/ocpp/v201/ch014] closed with CloseStatus[code=1001, reason=The web application is stopping]
+2025-12-16 23:36:50 INFO  [SpringApplicationShutdownHook] c.o.w.w.handler.OcppWebSocketHandler - WS: Connection closed from CP id=ch014 status=CloseStatus[code=1001, reason=The web application is stopping]
+2025-12-16 23:59:54 INFO  [main] c.o.w.w.Websockets201Application - Starting Websockets201Application v0.0.1-SNAPSHOT using Java 17.0.12 with PID 20248 (E:\websockets201\websockets201\target\websockets201-0.0.1-SNAPSHOT.jar started by lenovo in E:\websockets201)
+2025-12-16 23:59:54 INFO  [main] c.o.w.w.Websockets201Application - No active profile set, falling back to 1 default profile: "default"
+2025-12-16 23:59:58 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-16 23:59:58 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 269 ms. Found 5 JPA repository interfaces.

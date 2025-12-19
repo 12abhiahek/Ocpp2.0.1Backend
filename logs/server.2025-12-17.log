@@ -1,0 +1,54 @@
+2025-12-17 00:00:01 INFO  [main] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-12-17 00:00:01 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-12-17 00:00:01 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-17 00:00:01 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-17 00:00:01 INFO  [main] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 6936 ms
+2025-12-17 00:00:11 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-17 00:00:12 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-17 00:00:13 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6badb08c
+2025-12-17 00:00:13 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-17 00:00:24 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-17 00:00:24 INFO  [main] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-17 00:00:25 INFO  [main] c.o.w.w.config.WebSocketConfig - WebSocketConfig: Registered OCPP WebSocket handler ws://localhost:8081/ocpp2/v201/{stationId}
+2025-12-17 00:00:25 DEBUG [main] o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/ocpp/v201/{cpId}] in 'webSocketHandlerMapping'
+2025-12-17 00:00:26 WARN  [main] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-17 00:00:26 INFO  [main] o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-12-17 00:00:26 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 11 mappings in 'requestMappingHandlerMapping'
+2025-12-17 00:00:26 DEBUG [main] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-12-17 00:00:27 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-17 00:00:27 DEBUG [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-17 00:00:27 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-12-17 00:00:28 INFO  [main] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-12-17 00:00:28 INFO  [main] c.o.w.w.Websockets201Application - Started Websockets201Application in 36.281 seconds (process running for 37.858)
+2025-12-17 00:00:28 INFO  [main] c.o.w.w.config.OpenLogOnStart - Log file opened in Notepad at startup.
+2025-12-17 00:00:28 INFO  [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-17 00:00:28 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-17 00:00:28 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-12-17 00:00:28 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-12-17 00:00:28 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4f70b659
+2025-12-17 00:00:28 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@2b551e7b
+2025-12-17 00:00:28 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-12-17 00:00:28 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2025-12-17 00:00:28 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/ocpp/v201/ch014", parameters={}
+2025-12-17 00:00:28 DEBUG [http-nio-8081-exec-1] o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@5ad13be4
+2025-12-17 00:00:28 DEBUG [http-nio-8081-exec-1] o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /ocpp/v201/ch014
+2025-12-17 00:00:29 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+2025-12-17 00:00:29 DEBUG [http-nio-8081-exec-1] o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=e4e9f782-3b71-7ee0-e25b-37d4c97f514b, uri=ws://localhost:8081/ocpp/v201/ch014]
+2025-12-17 00:00:29 INFO  [http-nio-8081-exec-1] c.o.w.w.handler.OcppWebSocketHandler - WS: Connection established from CP id=ch014
+2025-12-17 00:00:30 INFO  [http-nio-8081-exec-1] c.o.w.w.h.BootNotificationHandler - BootNotification from ch014 vendor=OCPP Simulator model=Virtual-CP-2.0.1
+2025-12-17 00:00:47 INFO  [http-nio-8081-exec-2] c.o.w.w.handler.AuthorizeHandler -  Authorize Request received → idToken=tagg123
+2025-12-17 00:00:51 INFO  [http-nio-8081-exec-2] c.o.w.w.handler.AuthorizeHandler -  Authorize Response → {"messageId":"bd084ee4-6bde-4b05-b9d7-7388f5749902","action":"Authorize","payload":{"idTokenInfo":{"status":"Accepted"}}}
+2025-12-17 00:00:55 INFO  [http-nio-8081-exec-3] c.o.w.w.h.TransactionEventHandler - TransactionEvent → type=Started txId=null cpId=1 meterValue=0.0
+2025-12-17 00:00:55 INFO  [http-nio-8081-exec-3] c.o.w.w.h.TransactionEventHandler - STARTED → assigned txId=8
+2025-12-17 00:00:55 INFO  [http-nio-8081-exec-3] c.o.w.w.h.StatusNotificationHandler - StatusNotification from ch014 status=Charging
+2025-12-17 00:01:32 INFO  [http-nio-8081-exec-4] c.o.w.w.h.StatusNotificationHandler - StatusNotification from ch014 status=Finishing
+2025-12-17 00:01:32 INFO  [http-nio-8081-exec-4] c.o.w.w.h.TransactionEventHandler - TransactionEvent → type=Ended txId=null cpId=1 meterValue=0.0
+2025-12-17 00:01:32 WARN  [http-nio-8081-exec-4] c.o.w.w.h.TransactionEventHandler - TransactionEvent Ended received without transactionId – ignored
+2025-12-17 00:01:32 INFO  [http-nio-8081-exec-4] c.o.w.w.h.StatusNotificationHandler - StatusNotification from ch014 status=Available
+2025-12-17 00:03:03 DEBUG [http-nio-8081-exec-5] o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=e4e9f782-3b71-7ee0-e25b-37d4c97f514b, uri=ws://localhost:8081/ocpp/v201/ch014] closed with CloseStatus[code=1001, reason=null]
+2025-12-17 00:03:03 INFO  [http-nio-8081-exec-5] c.o.w.w.handler.OcppWebSocketHandler - WS: Connection closed from CP id=ch014 status=CloseStatus[code=1001, reason=null]
+2025-12-17 00:03:13 INFO  [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-17 00:03:13 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-17 00:03:13 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-17 00:03:13 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-17 00:03:13 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -1,0 +1,15 @@
+ _____       _   _  _  __ _
+|__  / _   _| \ | || |/ /| |_
+  / / | | | |  \| || ' / | __|
+ / /_ | |_| | |\  || . \ | |_
+/____| \__, |_| \_||_|\_\ \__|
+       |___/        ZYNKA
+
+
+                 WebSocket OCPP 2.0.1 Server Ready
+   ------------------------------------------------------------------
+      Endpoint: ws://localhost:8081/ocpp2/v201/{stationId}
+       App : ${spring.application.name}
+       Port: ${server.port}
+       Log : http://localhost:${server.port}/open-log
+   ------------------------------------------------------------------
