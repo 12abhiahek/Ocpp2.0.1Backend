@@ -11,28 +11,6 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class ChargingProfileController {
 
-//    private final ChargingProfileService chargingProfileService;
-
-//    @PostMapping("/apply")
-//    public ResponseEntity<?> applyProfile(
-//            @RequestBody ChargingProfileRequest request
-//    ) {
-//        chargingProfileService.applyProfile(request);
-//        return ResponseEntity.ok("Charging profile applied");
-//    }
-//
-//    @PostMapping("/clear")
-//    public ResponseEntity<?> clearProfile(
-//            @RequestBody ChargingProfileRequest request
-//    ) {
-//        chargingProfileService.clearProfile(
-//                request.getChargeBoxId(),
-//                request.getEvseId(),
-//                request.getTransactionId()
-//        );
-//        return ResponseEntity.ok("Charging profile cleared");
-//    }
-
     private final ChargingProfileService service;
 
     @PostMapping("/apply")

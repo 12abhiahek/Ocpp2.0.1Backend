@@ -57,15 +57,6 @@ public class ChargingProfile {
     @Column(name = "start_schedule")
     private Instant startSchedule;
 
-//    @OneToMany(mappedBy = "profile",
-//            cascade = CascadeType.ALL,
-//            orphanRemoval = true,
-//            fetch = FetchType.EAGER)
-//
-//    private List<ChargingSchedule> schedules =new ArrayList<>();
-
-
-    /** IMPORTANT FIX */
     @OneToMany(mappedBy = "profile",
             cascade = CascadeType.ALL,
             orphanRemoval = true,

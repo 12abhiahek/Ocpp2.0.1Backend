@@ -8,29 +8,6 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-//@Entity
-//@Table(name = "charging_schedule_period")
-//@Getter
-//@Setter
-//@NoArgsConstructor
-//public class ChargingSchedulePeriod {
-//
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    private Long id;
-//
-//    @Column(name = "start_period", nullable = false)
-//    private Integer startPeriod;  // seconds
-//
-//    @Column(name = "limit", nullable = false)
-//    private Integer limit;        // watts or amps
-//
-//    @ManyToOne
-//    @JoinColumn(name = "schedule_id", nullable = false)
-//    private ChargingSchedule schedule;
-//}
-
-
     @Entity
     @Table(name = "charging_schedule_period")
     @Getter

@@ -12,22 +12,6 @@ import java.util.Optional;
 @Repository
 public interface ChargingProfileRepository extends JpaRepository<ChargingProfile, Long> {
 
-
-
-//    @Query("""
-//        SELECT cp FROM ChargingProfile cp
-//        WHERE cp.chargingProfilePurpose = :purpose
-//        AND (cp.validFrom IS NULL OR cp.validFrom <= CURRENT_TIMESTAMP)
-//        AND (cp.validTo IS NULL OR cp.validTo >= CURRENT_TIMESTAMP)
-//        ORDER BY cp.stackLevel DESC
-//        """)
-//    Optional<ChargingProfile> findActiveProfiles(
-//            @Param("profileId") String profileId
-//    );
-
-
-
-
     // For ChargePointMaxProfile / DefaultProfile
     @Query("""
         SELECT cp FROM ChargingProfile cp
