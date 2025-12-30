@@ -16,6 +16,7 @@ import tools.jackson.databind.ObjectMapper;
 
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 
 @Service
@@ -43,11 +44,22 @@ public class ChargingProfileService {
                         : UUID.randomUUID().toString()
         );
 
-        profile.setStackLevel(1);
+        profile.setStackLevel(
+                req.getStackLevel() != null ? req.getStackLevel() : 1
+        );
+
+//        profile.setStackLevel(1);
         profile.setChargingProfilePurpose(req.getChargingProfilePurpose());
         profile.setChargingProfileKind(req.getChargingProfileKind());
         profile.setChargingRateUnit(req.getChargingRateUnit());
         profile.setMinChargingRate(BigDecimal.ZERO);
+
+        profile.setRecurrenceKind(req.getRecurrenceKind());
+
+        profile.setValidFrom(req.getValidFrom());
+        profile.setValidTo(req.getValidTo());
+        profile.setDurationInSeconds(req.getDurationInSeconds());
+        profile.setStartSchedule(req.getStartSchedule());
 
         // ---------- CREATE PERIOD ----------
         ChargingSchedulePeriod period =
@@ -71,6 +83,15 @@ public class ChargingProfileService {
                 profile.getChargingProfileKind(),
                 req.getLimit(),
                 req.getChargingRateUnit()
+        );
+
+
+        log.info(
+                "[CP][DB] Profile timing | validFrom={} validTo={} duration={}s startSchedule={}",
+                req.getValidFrom(),
+                req.getValidTo(),
+                req.getDurationInSeconds(),
+                req.getStartSchedule()
         );
 
         // ---------- SEND TO CHARGER ----------
@@ -214,6 +235,37 @@ public class ChargingProfileService {
             log.error("ClearChargingProfile failed", e);
         }
     }
+
+
+
+    public Map<String, Object> applyProfileAndReturn(
+            ChargingProfileRequest req
+    ) {
+        applyProfile(req);
+
+        return Map.of(
+                "chargeBoxId", req.getChargeBoxId(),
+                "evseId", req.getEvseId(),
+                "purpose", req.getChargingProfilePurpose(),
+                "limit", req.getLimit(),
+                "unit", req.getChargingRateUnit()
+        );
+    }
+
+    public Map<String, Object> clearChargingProfileAndReturn(
+            String chargeBoxId,
+            Integer evseId,
+            String profileId
+    ) {
+        clearChargingProfile(chargeBoxId, evseId, profileId);
+
+        return Map.of(
+                "chargeBoxId", chargeBoxId,
+                "evseId", evseId,
+                "profileId", profileId
+        );
+    }
+
 
 }
 
