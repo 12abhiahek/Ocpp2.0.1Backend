@@ -4,6 +4,8 @@ package com.ocpp201.websocket.websockets201.handler;
 import com.ocpp201.websocket.websockets201.model.OcppMessage;
 //import com.ocpp201.websocket.websockets201.service.AuthorizationService;
 import com.ocpp201.websocket.websockets201.service.AuthorizationService;
+import com.ocpp201.websocket.websockets201.service.AvailabilityService;
+import com.ocpp201.websocket.websockets201.service.ReservationEnforcementService;
 import com.ocpp201.websocket.websockets201.util.JsonHelper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -14,73 +16,11 @@ import tools.jackson.databind.JsonNode;
 import tools.jackson.databind.ObjectMapper;
 import tools.jackson.databind.node.ObjectNode;
 
-//@Slf4j
-//@Service
+@Slf4j
+@Service
 //@RequiredArgsConstructor
-//public class AuthorizeHandler implements HandlerStrategy{
-//
-////    private final AuthorizationService authorizationService;
-////    private final ObjectMapper mapper = new ObjectMapper();
-////
-////    @Override
-////    public String action() {
-////        return "Authorize";
-////    }
-////
-////    @Override
-////    public void handle(WebSocketSession session, OcppMessage message) throws Exception {
-////
-////        JsonNode payload = message.getPayload();
-////
-////        // OCPP 2.0.1 Authorize Request Format:
-////        String idToken = "UNKNOWN";
-////
-////        if (payload != null && payload.has("idToken")) {
-////            JsonNode idTokenNode = payload.get("idToken");
-////            if (idTokenNode.has("idToken")) {
-////                idToken = idTokenNode.get("idToken").asText();
-////            }
-////        }
-////
-////        log.info(" Authorize Request received → idToken={}", idToken);
-////
-////        // DB validation
-////        String status = authorizationService.validateToken(idToken);
-////
-////        // Auto-register new tokens (Optional)
-////        if ("Invalid".equals(status)) {
-////            authorizationService.registerNewToken(idToken);
-////            log.info("Registered new token = {}", idToken);
-////            status = "Accepted";
-////        }
-////
-////        // Build OCPP 2.0.1 CallResult response
-////        ObjectNode idTokenInfo = mapper.createObjectNode();
-////        idTokenInfo.put("status", status);
-////
-////        ObjectNode responsePayload = mapper.createObjectNode();
-////        responsePayload.set("idTokenInfo", idTokenInfo);
-////
-////        // OCPP 2.0.1 Response:
-////        // {
-////        //   "messageId": "...",
-////        //   "action": "Authorize",
-////        //   "payload": { ... }
-////        // }
-////        ObjectNode callResult = mapper.createObjectNode();
-////        callResult.put("messageId", message.getUniqueId());
-////        callResult.put("action", "Authorize");
-////        callResult.set("payload", responsePayload);
-////
-////        String jsonResponse = mapper.writeValueAsString(callResult);
-////
-////        log.info(" Authorize Response → {}", jsonResponse);
-////
-////        session.sendMessage(new TextMessage(jsonResponse));
-////    }
-//
-//
-//
+public class AuthorizeHandler implements HandlerStrategy {
+
 //    private final AuthorizationService authorizationService;
 //    private final ObjectMapper mapper = new ObjectMapper();
 //
@@ -90,7 +30,8 @@ import tools.jackson.databind.node.ObjectNode;
 //    }
 //
 //    @Override
-//    public void handle(WebSocketSession session, OcppMessage message) throws Exception {
+//    public void handle(WebSocketSession session, OcppMessage message)
+//            throws Exception {
 //
 //        JsonNode payload = message.getPayload();
 //
@@ -103,39 +44,31 @@ import tools.jackson.databind.node.ObjectNode;
 //
 //        String status = authorizationService.validateToken(idToken);
 //
-//        // Optional auto-register
 //        if ("Invalid".equals(status)) {
 //            authorizationService.registerNewToken(idToken);
 //            status = "Accepted";
-//            log.info("Auto-registered new token {}", idToken);
 //        }
 //
-//        // Build OCPP 2.0.1 response
 //        ObjectNode idTokenInfo = mapper.createObjectNode();
 //        idTokenInfo.put("status", status);
 //
 //        ObjectNode responsePayload = mapper.createObjectNode();
 //        responsePayload.set("idTokenInfo", idTokenInfo);
 //
-//        String response = JsonHelper.result(
-//                message.getUniqueId(),
-//                responsePayload
-//        );
-//
-//        log.info("Authorize response → {}", response);
-//
-//        session.sendMessage(new TextMessage(response));
+//        session.sendMessage(new TextMessage(
+//                JsonHelper.result(message.getUniqueId(), responsePayload)
+//        ));
 //    }
-//}
 
 
-@Slf4j
-@Service
-@RequiredArgsConstructor
-public class AuthorizeHandler implements HandlerStrategy {
 
-    private final AuthorizationService authorizationService;
-    private final ObjectMapper mapper = new ObjectMapper();
+    private final AvailabilityService availabilityService;
+    private final ReservationEnforcementService reservationService;
+
+    public AuthorizeHandler(AvailabilityService availabilityService, ReservationEnforcementService reservationService) {
+        this.availabilityService = availabilityService;
+        this.reservationService=reservationService;
+    }
 
     @Override
     public String action() {
@@ -143,33 +76,69 @@ public class AuthorizeHandler implements HandlerStrategy {
     }
 
     @Override
-    public void handle(WebSocketSession session, OcppMessage message)
+    public void handle(WebSocketSession session, OcppMessage msg)
             throws Exception {
 
-        JsonNode payload = message.getPayload();
+        String cpId = session.getUri().getPath().split("/")[3];
+        Integer evseId = msg.getPayload().path("evseId").asInt(1);
 
-        String idToken = payload
-                .path("idToken")
-                .path("idToken")
-                .asText(null);
+        String idTag =
+                msg.getPayload()
+                        .path("idToken")
+                        .path("idToken")
+                        .asText();
 
-        log.info("Authorize → idToken={}", idToken);
+        ObjectNode resp = JsonHelper.obj();
 
-        String status = authorizationService.validateToken(idToken);
+        try {
+            if (!availabilityService.isOperative(cpId, evseId)) {
 
-        if ("Invalid".equals(status)) {
-            authorizationService.registerNewToken(idToken);
-            status = "Accepted";
+                resp.putObject("idTokenInfo")
+                        .put("status", "Blocked");
+
+                log.warn(
+                        "[AUTHORIZE-BLOCKED] cp={} evse={}",
+                        cpId, evseId
+                );
+            } else if (!reservationService.isAllowed(evseId, idTag)) {
+
+                resp.putObject("idTokenInfo")
+                        .put("status", "Blocked");
+
+                log.warn(
+                        "[AUTHORIZE-BLOCKED][RESERVATION] cp={} evse={} idTag={}",
+                        cpId, evseId, idTag
+                );
+                
+            } else {
+                resp.putObject("idTokenInfo")
+                        .put("status", "Accepted");
+
+                log.info(
+                        "[AUTHORIZE-ACCEPTED] cp={} evse={} token={}",
+                        cpId, evseId, idTag
+                );
+            }
+
+            session.sendMessage(
+                    new TextMessage(
+                            JsonHelper.result(msg.getUniqueId(), resp)
+                    )
+            );
+
+        } catch (Exception ex) {
+
+            log.error("[AUTHORIZE-ERROR]", ex);
+
+            session.sendMessage(
+                    new TextMessage(
+                            JsonHelper.error(
+                                    msg.getUniqueId(),
+                                    "InternalError",
+                                    ex.getMessage()
+                            )
+                    )
+            );
         }
-
-        ObjectNode idTokenInfo = mapper.createObjectNode();
-        idTokenInfo.put("status", status);
-
-        ObjectNode responsePayload = mapper.createObjectNode();
-        responsePayload.set("idTokenInfo", idTokenInfo);
-
-        session.sendMessage(new TextMessage(
-                JsonHelper.result(message.getUniqueId(), responsePayload)
-        ));
     }
 }
