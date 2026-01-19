@@ -9,32 +9,6 @@ import lombok.Setter;
 import java.time.Instant;
 import java.time.LocalDateTime;
 
-//@Data
-//@Entity
-//@Table(name = "meter_values")
-//@Getter
-//@Setter
-//@NoArgsConstructor
-//public class MeterValue {
-//
-//
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    private Long id;
-//
-//    private Long transactionId;
-//
-//    private String evseId;
-//
-//    private LocalDateTime timestamp;
-//
-//    private Double meterValue; // numeric Wh value
-//
-//
-//    private LocalDateTime createdAt = LocalDateTime.now();
-//
-//}
-
 
 @Data
 @Entity
@@ -59,6 +33,24 @@ public class MeterValue {
     // meter value stored as TEXT
     @Column(name = "value", columnDefinition = "TEXT")
     private String meterValue;
+
+    @Column(name = "reading_context")
+    private String readingContext;
+
+    @Column(name = "format")
+    private String format;
+
+    @Column(name = "measurand")
+    private String measurand;
+
+    @Column(name = "location")
+    private String location;
+
+    @Column(name = "unit")
+    private String unit;
+
+    @Column(name = "phase")
+    private String phase;
 
     // not in DB
     @Transient
